@@ -27,7 +27,6 @@ $(document).ready(function() {
 			colorMode = "normal";
 			$("button").removeClass("selected");
 			$(this).addClass("selected");
-			$("#container").children("div").css("background", "#fff");
 		}
 	});
 
@@ -37,6 +36,10 @@ $(document).ready(function() {
 			$("button").removeClass("selected");
 			$(this).addClass("selected");
 		}
+	});
+
+	$("#clearCanvas").on("click", function() {
+		$("#container").children("div").css({"background-color": "#000", "opacity": "0"})
 	});
 
 	$("[type='range']").on("change", function() {
@@ -53,7 +56,7 @@ $(document).ready(function() {
 		}
 		if (key == 72) {
 			toggleHelp();
-		};
+		}
 	});	
 });
 
