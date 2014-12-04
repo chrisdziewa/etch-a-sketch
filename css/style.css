@@ -1,0 +1,102 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both;
+	overflow: auto;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+#author {
+	margin-top: 0;
+}
+
+main {
+	width: 100%;
+	background: rgba(220,220,220,1);
+	margin: 0 auto;
+	padding-bottom: 50px;
+	overflow: auto;
+}
+aside {
+	position: absolute;
+	left: 80px;
+	top: 80px;
+}
+
+aside h3,
+aside h4,
+aside p {
+	position: relative;
+	max-width: 220px;
+}
+
+aside h4 {
+	margin-bottom: 0;
+	font-size: 1.1rem;
+}
+
+#help {
+	position: absolute;
+}
+
+#wrapper {
+	width: 500px;
+	margin: 0 auto;
+}
+
+header {
+	text-align: center;
+}
+
+#container {
+	width: 500px;
+	height: 500px;
+	background: black;
+	margin: 20px auto 0;
+	position: relative;
+}
+
+#container div {
+	background: white;
+	display: block;
+	float: left;
+	position: relative;
+	margin: 0;
+	opacity: 0;
+}
+
+#controls {
+	width: 100%;
+	text-align: center;
+}
+
+button {
+	text-align: center;
+	margin-bottom: 10px;
+	background: rgba(150,150,150,1);
+	border: none;
+	padding: 10px;
+	color: white;
+}
+
+button:hover,
+.selected {
+	background: rgba(100,100,100,1);
+}
+
+#penOutput {
+	margin-top: 0;
+}

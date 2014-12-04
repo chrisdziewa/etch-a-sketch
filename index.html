@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Etch-A-Sketch</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body>
+	<main>
+		<aside>
+			<h3>Show/hide instructions ( h )</h3>
+			<div id="help">
+				<h4>Controls:</h4>
+						
+				<p>Use the mouse to hover over the squares to change their lightness values. Stop and start pen flow by hitting the SPACEBAR</p>
+				<p>This project was made from scratch using HTML5, CSS3, JS, and jQuery.</p>
+	
+				<h4>Modes:</h4>
+	
+				<p><b>Normal Mode</b> uses a black field and each stroke becomes lighter</p>
+				<p><b>Random Color Mode</b> changes each block to a randomly generated color</p>
+			</div>
+		</aside>
+		<section id="wrapper">
+			<header>
+				<h1>Etch-A-Sketch</h1>
+				<p id="author">By: Chris Dziewa</p>
+			</header>
+
+			<div id="controls" class="clearfix">
+				<button id="changeGrid">Change Grid Size</button>
+				<button id="normalMode" class="selected">Normal Mode</button>
+				<button id="randomColor">Random Color</button>
+
+				<br>
+				<label for="changePenPressure">Pen Pressure</label>
+				<br>
+				<input id="changePenPressure" type="range" min="10" step="10" max="100" name="penPressure" value="10">
+				<p id="penOutput">.1</p>
+			</div>
+
+			<div id="container"></div>
+		</section>
+	</main>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
