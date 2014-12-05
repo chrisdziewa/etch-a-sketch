@@ -39,7 +39,7 @@ $(document).ready(function() {
 	});
 
 	$("#clearCanvas").on("click", function() {
-		$("#container").children("div").css({"background-color": "#000", "opacity": "0"})
+		$("#container").children("div").css({"background-color": "#fff", "opacity": "0"})
 	});
 
 	$("[type='range']").on("change", function() {
