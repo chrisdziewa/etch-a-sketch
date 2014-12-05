@@ -124,7 +124,7 @@ function toggleOpacity() {
 
 function changeSliderValues() {
 	$("#penOutput").text(penPressure);
-	$("changePenPressure").val(penPressure * 100);
+	$("#changePenPressure").val(penPressure * 100);
 }
 
 
