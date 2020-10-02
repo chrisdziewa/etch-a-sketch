@@ -60,7 +60,7 @@ $(document).ready(function() {
 	});	
 });
 
-function makeGrid(squaresPerSide) {
+function makeGrid(squaresPerSide) {         //function to generate a grid
 	clearGrid();
 	//Create squares
 	var numSquares = squaresPerSide * squaresPerSide;
@@ -76,7 +76,7 @@ function makeGrid(squaresPerSide) {
 	changeSliderValues();
 }
 
-function randomColorChange(box) {
+function randomColorChange(box) {         //function to change the color to random color
 	var redVal = Math.floor(Math.random() * 255 + 1); 
 	var greenVal = Math.floor(Math.random() * 255 + 1); 
 	var blueVal = Math.floor(Math.random() * 255 + 1); 
@@ -84,7 +84,7 @@ function randomColorChange(box) {
 	box.css("background", newVal);
 }
 
-function changeOpacity(box) {
+function changeOpacity(box) {         //function to change the opacity of grid
 	var currentOpacity = box.css("opacity");
 		currentOpacity = parseFloat(currentOpacity);
 		if (currentOpacity < 1) {
@@ -93,11 +93,11 @@ function changeOpacity(box) {
 		}
 }
 
-function clearGrid() {
+function clearGrid() {         //function to clear the grid
 	$("#container").children("div").remove();
 }
 
-function changeGridSize() {
+function changeGridSize() {         //function to change the grid size
 	var newSize = prompt("Choose a new side length (between 1 and 100)");
 	 while (isNaN(newSize) || newSize > 100 || newSize < 1 && 
 	 	newSize != null && newSize !== "") {
@@ -110,7 +110,7 @@ function changeGridSize() {
 	 makeGrid(newSize);
 }
 
-function toggleOpacity() {
+function toggleOpacity() {         //function to toggle the opacity
 	if (penPressure !== 0) {
 		prevPressure = penPressure;
 		penPressure = 0;
@@ -122,12 +122,12 @@ function toggleOpacity() {
 	changeSliderValues();	
 }
 
-function changeSliderValues() {
+function changeSliderValues() {         //function to change the slider values
 	$("#penOutput").text(penPressure);
 	$("#changePenPressure").val(penPressure * 100);
 }
 
 
-function toggleHelp() {
+function toggleHelp() {         //function to access the help menu
 	$("#help").fadeToggle();
 }
